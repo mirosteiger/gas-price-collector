@@ -7,7 +7,7 @@ import webbrowser
 
 # rumps.debug_mode(True)
 
-APP_NAME = "Benzinpreise"
+APP_NAME = "Gas Collector"
 URL = "https://www.benzinpreis-aktuell.de/tanken-shell-tankstelle-koeln-50823-f40b.html"
 SHEET_URL = "https://docs.google.com/spreadsheets/d/"+spreadsheet.SHEET_ID+"/edit"
 REFRESH_INTERVALS = [10, 15, 30, 60, 90]
@@ -96,7 +96,7 @@ class TankApp(rumps.App):
         self.menu.add(rumps.separator)
         self.menu.add("updated")
         self.menu.add(rumps.separator)
-        self.menu.add(self.tankstelle)
+        # self.menu.add(self.tankstelle)
         self.menu.add("price")
         self.menu.add(rumps.separator)
         self.menu.add(rumps.MenuItem("Open source in browser"))
